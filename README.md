@@ -1,4 +1,0 @@
-hero
-====
-
-3dEngineDemo
