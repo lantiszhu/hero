@@ -3,7 +3,7 @@
 #include "CSceneMgr.h"
 #include "CRenderMgr.h"
 
-using namespace Free;
+using namespace hero;
 
 CFreeEngine::CFreeEngine(void)
 {

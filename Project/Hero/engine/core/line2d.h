@@ -1,11 +1,11 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_LINE_2D_H_INCLUDED__
 #define __HERO_LINE_2D_H_INCLUDED__
 
-#include "irrTypes.h"
+#include "hrTypes.h"
 #include "vector2d.h"
 
 namespace hero
@@ -241,7 +241,7 @@ class line2d
 
 	// partial specialization to optimize <f32> lines (avoiding casts)
 	template <>
-	inline vector2df line2d<irr::f32>::getClosestPoint(const vector2df& point, bool checkOnlySegments) const
+	inline vector2df line2d<hero::f32>::getClosestPoint(const vector2df& point, bool checkOnlySegments) const
 	{
 		vector2df c = point - start;
 		vector2df v = end - start;
@@ -265,7 +265,7 @@ class line2d
 	//! Typedef for an f32 line.
 	typedef line2d<f32> line2df;
 	//! Typedef for an integer line.
-	typedef line2d<s32> line2di;
+	typedef line2d<int32> line2di;
 
 } // end namespace core
 } // end namespace hero

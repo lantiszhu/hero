@@ -2,9 +2,9 @@
 #include "CWin32Plat.h"
 #include "IFrame.h"
 
-using namespace Free;
+using namespace hero;
 
-namespace Free
+namespace hero
 {
 
 LRESULT WINAPI freeWin32Proc(HWND _hwnd, UINT _msg, WPARAM _wparam, LPARAM _lparam)
@@ -12,6 +12,10 @@ LRESULT WINAPI freeWin32Proc(HWND _hwnd, UINT _msg, WPARAM _wparam, LPARAM _lpar
 	long lr = 0;
 	switch(_msg)
 	{
+	case WM_SIZE:
+		{
+			break;
+		}
 	case WM_CLOSE:
 		{
 			QuitFlag = true;

@@ -1,11 +1,11 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_POINT_2D_H_INCLUDED__
 #define __HERO_POINT_2D_H_INCLUDED__
 
-#include "irrMath.h"
+#include "hrMath.h"
 #include "dimension2d.h"
 
 namespace hero
@@ -192,14 +192,14 @@ public:
 
 		if ( Y > 0)
 			if (X > 0)
-				return atan((irr::f64)Y/(irr::f64)X) * RADTODEG64;
+				return atan((hero::f64)Y/(hero::f64)X) * RADTODEG64;
 			else
-				return 180.0-atan((irr::f64)Y/-(irr::f64)X) * RADTODEG64;
+				return 180.0-atan((hero::f64)Y/-(hero::f64)X) * RADTODEG64;
 		else
 			if (X > 0)
-				return 360.0-atan(-(irr::f64)Y/(irr::f64)X) * RADTODEG64;
+				return 360.0-atan(-(hero::f64)Y/(hero::f64)X) * RADTODEG64;
 			else
-				return 180.0+atan(-(irr::f64)Y/-(irr::f64)X) * RADTODEG64;
+				return 180.0+atan(-(hero::f64)Y/-(hero::f64)X) * RADTODEG64;
 	}
 
 	//! Calculates the angle of this vector in degrees in the counter trigonometric sense.
@@ -212,7 +212,7 @@ public:
 		else if (X == 0)
 			return Y < 0 ? 90 : 270;
 
-		// don't use getLength here to avoid precision loss with s32 vectors
+		// don't use getLength here to avoid precision loss with int32 vectors
 		// avoid floating-point trouble as sqrt(y*y) is occasionally larger than y, so clamp
 		const f64 tmp = core::clamp(Y / sqrt((f64)(X*X + Y*Y)), -1.0, 1.0);
 		const f64 angle = atan( core::squareroot(1 - tmp*tmp) / tmp) * RADTODEG64;
@@ -323,7 +323,7 @@ public:
 	typedef vector2d<f32> vector2df;
 
 	//! Typedef for integer 2d vector.
-	typedef vector2d<s32> vector2di;
+	typedef vector2d<int32> vector2di;
 
 	template<class S, class T>
 	vector2d<T> operator*(const S scalar, const vector2d<T>& vector) { return vector*scalar; }

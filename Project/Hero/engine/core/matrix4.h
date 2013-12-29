@@ -1,17 +1,17 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_MATRIX_H_INCLUDED__
 #define __HERO_MATRIX_H_INCLUDED__
 
-#include "irrMath.h"
+#include "hrMath.h"
 #include "vector3d.h"
 #include "vector2d.h"
 #include "plane3d.h"
 #include "aabbox3d.h"
 #include "rect.h"
-#include "irrString.h"
+#include "hrString.h"
 
 // enable this to keep track of changes to the matrix
 // and make simpler identity check for seldomly changing matrices
@@ -66,7 +66,7 @@ namespace core
 			CMatrix4(const CMatrix4<T>& other, eConstructor constructor = EM4CONST_COPY);
 
 			//! Simple operator for directly accessing every element of the matrix.
-			T& operator()(const s32 row, const s32 col)
+			T& operator()(const int32 row, const int32 col)
 			{
 #if defined ( USE_MATRIX_TEST )
 				definitelyIdentityMatrix=false;
@@ -75,10 +75,10 @@ namespace core
 			}
 
 			//! Simple operator for directly accessing every element of the matrix.
-			const T& operator()(const s32 row, const s32 col) const { return M[row * 4 + col]; }
+			const T& operator()(const int32 row, const int32 col) const { return M[row * 4 + col]; }
 
 			//! Simple operator for linearly accessing every element of the matrix.
-			T& operator[](u32 index)
+			T& operator[](uint32 index)
 			{
 #if defined ( USE_MATRIX_TEST )
 				definitelyIdentityMatrix=false;
@@ -87,7 +87,7 @@ namespace core
 			}
 
 			//! Simple operator for linearly accessing every element of the matrix.
-			const T& operator[](u32 index) const { return M[index]; }
+			const T& operator[](uint32 index) const { return M[index]; }
 
 			//! Sets this matrix equal to the other matrix.
 			inline CMatrix4<T>& operator=(const CMatrix4<T> &other);
@@ -303,7 +303,7 @@ namespace core
 
 			//! Builds a matrix which transforms a normalized Device Coordinate to Device Coordinates.
 			/** Used to scale <-1,-1><1,1> to viewport, for example from <-1,-1> <1,1> to the viewport <0,0><0,640> */
-			CMatrix4<T>& buildNDCToDCMatrix( const core::rect<s32>& area, f32 zScale);
+			CMatrix4<T>& buildNDCToDCMatrix( const core::rect<int32>& area, f32 zScale);
 
 			//! Creates a new matrix as interpolated matrix from two other ones.
 			/** \param b: other matrix to interpolate with
@@ -403,11 +403,11 @@ namespace core
 			T M[16];
 #if defined ( USE_MATRIX_TEST )
 			//! Flag is this matrix is identity matrix
-			mutable u32 definitelyIdentityMatrix;
+			mutable uint32 definitelyIdentityMatrix;
 #endif
 #if defined ( USE_MATRIX_TEST_DEBUG )
-			u32 id;
-			mutable u32 calls;
+			uint32 id;
+			mutable uint32 calls;
 #endif
 
 	};
@@ -1021,8 +1021,8 @@ namespace core
 			!core::equals( M[15], (T)1 ))
 			return false;
 
-		for (s32 i=0; i<4; ++i)
-			for (s32 j=0; j<4; ++j)
+		for (int32 i=0; i<4; ++i)
+			for (int32 j=0; j<4; ++j)
 				if ((j != i) && (!iszero((*this)(i,j))))
 					return false;
 */
@@ -1233,9 +1233,9 @@ namespace core
 
 		const CMatrix4<T> &m = *this;
 
-		for (u32 i = 0; i < 3; ++i)
+		for (uint32 i = 0; i < 3; ++i)
 		{
-			for (u32 j = 0; j < 3; ++j)
+			for (uint32 j = 0; j < 3; ++j)
 			{
 				const f32 a = m(j,i) * Amin[j];
 				const f32 b = m(j,i) * Amax[j];
@@ -1455,7 +1455,7 @@ namespace core
 	template <class T>
 	inline CMatrix4<T>& CMatrix4<T>::operator=(const T& scalar)
 	{
-		for (s32 i = 0; i < 16; ++i)
+		for (int32 i = 0; i < 16; ++i)
 			M[i]=scalar;
 
 #if defined ( USE_MATRIX_TEST )
@@ -1472,7 +1472,7 @@ namespace core
 		if (definitelyIdentityMatrix && other.definitelyIdentityMatrix)
 			return true;
 #endif
-		for (s32 i = 0; i < 16; ++i)
+		for (int32 i = 0; i < 16; ++i)
 			if (M[i] != other.M[i])
 				return false;
 
@@ -1858,7 +1858,7 @@ namespace core
 	{
 		CMatrix4<T> mat ( EM4CONST_NOTHING );
 
-		for (u32 i=0; i < 16; i += 4)
+		for (uint32 i=0; i < 16; i += 4)
 		{
 			mat.M[i+0] = (T)(M[i+0] + ( b.M[i+0] - M[i+0] ) * time);
 			mat.M[i+1] = (T)(M[i+1] + ( b.M[i+1] - M[i+1] ) * time);
@@ -1910,7 +1910,7 @@ namespace core
 
 	// used to scale <-1,-1><1,1> to viewport
 	template <class T>
-	inline CMatrix4<T>& CMatrix4<T>::buildNDCToDCMatrix( const core::rect<s32>& viewport, f32 zScale)
+	inline CMatrix4<T>& CMatrix4<T>::buildNDCToDCMatrix( const core::rect<int32>& viewport, f32 zScale)
 	{
 		const f32 scaleX = (viewport.getWidth() - 0.75f ) * 0.5f;
 		const f32 scaleY = -(viewport.getHeight() - 0.75f ) * 0.5f;
@@ -2213,7 +2213,7 @@ namespace core
 		if (definitelyIdentityMatrix && other.definitelyIdentityMatrix)
 			return true;
 #endif
-		for (s32 i = 0; i < 16; ++i)
+		for (int32 i = 0; i < 16; ++i)
 			if (!core::equals(M[i],other.M[i], tolerance))
 				return false;
 

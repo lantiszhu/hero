@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Free
+namespace hero
 {
 
 class IFrame;

@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "CRenderSample.h"
 
-using namespace Free;
+using namespace hero;
 
 CRenderSample* CRenderSample::m_Inst = NULL;
 

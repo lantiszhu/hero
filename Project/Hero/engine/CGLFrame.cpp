@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "CGLFrame.h"
 
-using namespace Free;
+using namespace hero;
 
 CGLFrame::CGLFrame(void)
 {

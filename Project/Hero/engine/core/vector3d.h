@@ -1,11 +1,11 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_POINT_3D_H_INCLUDED__
 #define __HERO_POINT_3D_H_INCLUDED__
 
-#include "irrMath.h"
+#include "hrMath.h"
 
 namespace hero
 {
@@ -415,16 +415,16 @@ namespace core
 	};
 
 	//! partial specialization for integer vectors
-	// Implementor note: inline keyword needed due to template specialization for s32. Otherwise put specialization into a .cpp
+	// Implementor note: inline keyword needed due to template specialization for int32. Otherwise put specialization into a .cpp
 	template <>
-	inline vector3d<s32> vector3d<s32>::operator /(s32 val) const {return core::vector3d<s32>(X/val,Y/val,Z/val);}
+	inline vector3d<int32> vector3d<int32>::operator /(int32 val) const {return core::vector3d<int32>(X/val,Y/val,Z/val);}
 	template <>
-	inline vector3d<s32>& vector3d<s32>::operator /=(s32 val) {X/=val;Y/=val;Z/=val; return *this;}
+	inline vector3d<int32>& vector3d<int32>::operator /=(int32 val) {X/=val;Y/=val;Z/=val; return *this;}
 
 	template <>
-	inline vector3d<s32> vector3d<s32>::getSphericalCoordinateAngles() const
+	inline vector3d<int32> vector3d<int32>::getSphericalCoordinateAngles() const
 	{
-		vector3d<s32> angle;
+		vector3d<int32> angle;
 		const f64 length = X*X + Y*Y + Z*Z;
 
 		if (length)
@@ -445,7 +445,7 @@ namespace core
 	typedef vector3d<f32> vector3df;
 
 	//! Typedef for an integer 3d vector.
-	typedef vector3d<s32> vector3di;
+	typedef vector3d<int32> vector3di;
 
 	//! Function multiplying a scalar and a vector component-wise.
 	template<class S, class T>

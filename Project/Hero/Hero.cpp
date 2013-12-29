@@ -1,4 +1,4 @@
-// Free.cpp : Defines the entry point for the console application.
+// hero.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -6,7 +6,7 @@
 #include "engine\CWin32Plat.h"
 #include "engine\CGLFrame.h"
 
-using namespace Free;
+using namespace hero;
 
 int _tmain(int argc, _TCHAR* argv[])
 {

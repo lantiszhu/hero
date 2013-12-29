@@ -1,11 +1,11 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_RECT_H_INCLUDED__
 #define __HERO_RECT_H_INCLUDED__
 
-#include "irrTypes.h"
+#include "hrTypes.h"
 #include "dimension2d.h"
 #include "position2d.h"
 
@@ -270,7 +270,7 @@ namespace core
 	//! Rectangle with float values
 	typedef rect<f32> rectf;
 	//! Rectangle with int values
-	typedef rect<s32> recti;
+	typedef rect<int32> recti;
 
 } // end namespace core
 } // end namespace hero

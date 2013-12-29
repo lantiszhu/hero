@@ -254,43 +254,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\engine\CRenderMgr.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CRenderMgr.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CRenderNode.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CRenderNode.h"
-				>
-			</File>
-			<File
 				RelativePath=".\engine\CRenderSample.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\engine\CRenderSample.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CRenderScene.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CRenderScene.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CSceneMgr.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CSceneMgr.h"
 				>
 			</File>
 			<File
@@ -317,22 +285,6 @@
 				RelativePath=".\engine\IPlat.h"
 				>
 			</File>
-			<File
-				RelativePath=".\engine\matrix.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\matrix.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\vec3.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\vec3.h"
-				>
-			</File>
 			<Filter
 				Name="core"
 				>
@@ -345,35 +297,35 @@
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrAllocator.h"
+					RelativePath=".\engine\core\hrAllocator.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrArray.h"
+					RelativePath=".\engine\core\hrArray.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\IrrCompileConfig.h"
+					RelativePath=".\engine\core\hrCompileConfig.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrList.h"
+					RelativePath=".\engine\core\hrList.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrMap.h"
+					RelativePath=".\engine\core\hrMap.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrMath.h"
+					RelativePath=".\engine\core\hrMath.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrString.h"
+					RelativePath=".\engine\core\hrString.h"
 					>
 				</File>
 				<File
-					RelativePath=".\engine\core\irrTypes.h"
+					RelativePath=".\engine\core\hrTypes.h"
 					>
 				</File>
 				<File
@@ -414,6 +366,70 @@
 				</File>
 				<File
 					RelativePath=".\engine\core\vector3d.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="scene"
+				>
+				<File
+					RelativePath=".\engine\scene\CScene.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CScene.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CSceneMgr.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CSceneMgr.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CShaderBase.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CShaderBase.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CShaderMgr.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\scene\CShaderMgr.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="render"
+				>
+				<File
+					RelativePath=".\engine\render\CRenderMgr.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\render\CRenderMgr.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\render\CRenderNode.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\render\CRenderNode.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\render\CRenderScene.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\render\CRenderScene.h"
 					>
 				</File>
 			</Filter>

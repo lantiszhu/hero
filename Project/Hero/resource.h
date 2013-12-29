@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by Free.rc
+// Used by hero.rc
 
 // Next default values for new objects
 // 

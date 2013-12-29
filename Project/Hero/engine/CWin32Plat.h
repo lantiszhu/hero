@@ -2,7 +2,7 @@
 
 #include "IPlat.h"
 
-namespace Free
+namespace hero
 {
 
 static bool QuitFlag = false;

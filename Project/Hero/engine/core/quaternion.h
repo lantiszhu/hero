@@ -1,12 +1,12 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_QUATERNION_H_INCLUDED__
 #define __HERO_QUATERNION_H_INCLUDED__
 
-#include "irrTypes.h"
-#include "irrMath.h"
+#include "hrTypes.h"
+#include "hrMath.h"
 #include "matrix4.h"
 #include "vector3d.h"
 

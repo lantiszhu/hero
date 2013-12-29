@@ -2,7 +2,7 @@
 #include "IFrame.h"
 #include "CFreeEngine.h"
 
-using namespace Free;
+using namespace hero;
 
 CFreeEngine* IFrame::m_engine = NULL;
 

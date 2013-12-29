@@ -1,12 +1,12 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_DIMENSION2D_H_INCLUDED__
 #define __HERO_DIMENSION2D_H_INCLUDED__
 
-#include "irrTypes.h"
-#include "irrMath.h" // for irr::core::equals()
+#include "hrTypes.h"
+#include "hrMath.h" // for hero::core::equals()
 
 namespace hero
 {
@@ -151,25 +151,25 @@ namespace core
 					bool requirePowerOfTwo=true,
 					bool requireSquare=false,
 					bool larger=true,
-					u32 maxValue = 0) const
+					uint32 maxValue = 0) const
 			{
-				u32 i=1;
-				u32 j=1;
+				uint32 i=1;
+				uint32 j=1;
 				if (requirePowerOfTwo)
 				{
-					while (i<(u32)Width)
+					while (i<(uint32)Width)
 						i<<=1;
-					if (!larger && i!=1 && i!=(u32)Width)
+					if (!larger && i!=1 && i!=(uint32)Width)
 						i>>=1;
-					while (j<(u32)Height)
+					while (j<(uint32)Height)
 						j<<=1;
-					if (!larger && j!=1 && j!=(u32)Height)
+					if (!larger && j!=1 && j!=(uint32)Height)
 						j>>=1;
 				}
 				else
 				{
-					i=(u32)Width;
-					j=(u32)Height;
+					i=(uint32)Width;
+					j=(uint32)Height;
 				}
 
 				if (requireSquare)
@@ -209,12 +209,12 @@ namespace core
 	//! Typedef for an f32 dimension.
 	typedef dimension2d<f32> dimension2df;
 	//! Typedef for an unsigned integer dimension.
-	typedef dimension2d<u32> dimension2du;
+	typedef dimension2d<uint32> dimension2du;
 
 	//! Typedef for an integer dimension.
 	/** There are few cases where negative dimensions make sense. Please consider using
 		dimension2du instead. */
-	typedef dimension2d<s32> dimension2di;
+	typedef dimension2d<int32> dimension2di;
 
 
 } // end namespace core

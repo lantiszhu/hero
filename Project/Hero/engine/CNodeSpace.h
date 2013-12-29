@@ -1,10 +1,8 @@
 #pragma once
 
-#include "matrix.h"
+//#include "matrix.h"
 
-using namespace Free::Core;
-
-namespace Free
+namespace hero
 {
 
 //描述对象在其父空间的位置和姿态
@@ -19,7 +17,7 @@ public:
 	virtual void GetPosition(float& _x,float& _y,float& _z);
 
 protected:
-	CMatrix m_Mat;
+	//CMatrix m_Mat;
 };
 
 //!namespace

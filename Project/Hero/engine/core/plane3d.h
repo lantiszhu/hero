@@ -1,11 +1,11 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_PLANE_3D_H_INCLUDED__
 #define __HERO_PLANE_3D_H_INCLUDED__
 
-#include "irrMath.h"
+#include "hrMath.h"
 #include "vector3d.h"
 
 namespace hero
@@ -236,7 +236,7 @@ class plane3d
 typedef plane3d<f32> plane3df;
 
 //! Typedef for an integer 3d plane.
-typedef plane3d<s32> plane3di;
+typedef plane3d<int32> plane3di;
 
 } // end namespace core
 } // end namespace hero

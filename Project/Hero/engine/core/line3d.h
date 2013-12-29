@@ -1,11 +1,11 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_LINE_3D_H_INCLUDED__
 #define __HERO_LINE_3D_H_INCLUDED__
 
-#include "irrTypes.h"
+#include "hrTypes.h"
 #include "vector3d.h"
 
 namespace hero
@@ -135,7 +135,7 @@ class line3d
 	//! Typedef for an f32 line.
 	typedef line3d<f32> line3df;
 	//! Typedef for an integer line.
-	typedef line3d<s32> line3di;
+	typedef line3d<int32> line3di;
 
 } // end namespace core
 } // end namespace hero

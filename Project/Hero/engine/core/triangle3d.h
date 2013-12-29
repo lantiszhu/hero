@@ -1,6 +1,6 @@
 // Copyright (C) 2002-2012 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
-// For conditions of distribution and use, see copyright notice in irrlicht.h
+// For conditions of distribution and use, see copyright notice in hrlicht.h
 
 #ifndef __HERO_TRIANGLE_3D_H_INCLUDED__
 #define __HERO_TRIANGLE_3D_H_INCLUDED__
@@ -174,10 +174,10 @@ namespace core
 			const vector3d<f64> lineVectf64(lineVect.X, lineVect.Y, lineVect.Z);
 			vector3d<f64> outIntersectionf64;
 
-			core::triangle3d<irr::f64> trianglef64(vector3d<f64>((f64)pointA.X, (f64)pointA.Y, (f64)pointA.Z)
+			core::triangle3d<hero::f64> trianglef64(vector3d<f64>((f64)pointA.X, (f64)pointA.Y, (f64)pointA.Z)
 										,vector3d<f64>((f64)pointB.X, (f64)pointB.Y, (f64)pointB.Z)
 										, vector3d<f64>((f64)pointC.X, (f64)pointC.Y, (f64)pointC.Z));
-			const vector3d<irr::f64> normalf64 = trianglef64.getNormal().normalize();
+			const vector3d<hero::f64> normalf64 = trianglef64.getNormal().normalize();
 			f64 t2;
 
 			if ( core::iszero ( t2 = normalf64.dotProduct(lineVectf64) ) )
@@ -270,7 +270,7 @@ namespace core
 	typedef triangle3d<f32> triangle3df;
 
 	//! Typedef for an integer 3d triangle.
-	typedef triangle3d<s32> triangle3di;
+	typedef triangle3d<int32> triangle3di;
 
 } // end namespace core
 } // end namespace hero

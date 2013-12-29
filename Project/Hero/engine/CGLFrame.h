@@ -2,7 +2,7 @@
 
 #include "IFrame.h"
 
-namespace Free
+namespace hero
 {
 
 class CGLFrame :public IFrame
