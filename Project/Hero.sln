@@ -2,6 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hero", "Hero\Hero.vcproj", "{103B55EC-E2A4-4E2E-A441-E56CE7054FC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36126221-0F1A-4B5B-A7F9-950664DC8A50} = {36126221-0F1A-4B5B-A7F9-950664DC8A50}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeroEngine", "HeroEngine\HeroEngine.vcproj", "{36126221-0F1A-4B5B-A7F9-950664DC8A50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +18,10 @@ Global
 		{103B55EC-E2A4-4E2E-A441-E56CE7054FC4}.Debug|Win32.Build.0 = Debug|Win32
 		{103B55EC-E2A4-4E2E-A441-E56CE7054FC4}.Release|Win32.ActiveCfg = Release|Win32
 		{103B55EC-E2A4-4E2E-A441-E56CE7054FC4}.Release|Win32.Build.0 = Release|Win32
+		{36126221-0F1A-4B5B-A7F9-950664DC8A50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{36126221-0F1A-4B5B-A7F9-950664DC8A50}.Debug|Win32.Build.0 = Debug|Win32
+		{36126221-0F1A-4B5B-A7F9-950664DC8A50}.Release|Win32.ActiveCfg = Release|Win32
+		{36126221-0F1A-4B5B-A7F9-950664DC8A50}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

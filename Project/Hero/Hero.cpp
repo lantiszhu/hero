@@ -3,8 +3,8 @@
 
 #include "stdafx.h"
 
-#include "engine\CWin32Plat.h"
-#include "engine\CGLFrame.h"
+#include "..\HeroEngine\engine\CWin32Plat.h"
+#include "..\HeroEngine\engine\CGLFrame.h"
 
 using namespace hero;
 
