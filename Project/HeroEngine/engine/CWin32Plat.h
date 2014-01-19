@@ -9,7 +9,7 @@ static bool QuitFlag = false;
 
 LRESULT WINAPI freeWin32Proc(HWND _hwnd, UINT _msg, WPARAM _wparam, LPARAM _lparam);
 
-class CRY_ENGINE_API CWin32Plat :public IPlat
+class HERO_ENGINE_API CWin32Plat :public IPlat
 {
 public:
 	CWin32Plat();

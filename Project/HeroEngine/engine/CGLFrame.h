@@ -5,7 +5,7 @@
 namespace hero
 {
 
-class CRY_ENGINE_API CGLFrame :public IFrame
+class HERO_ENGINE_API CGLFrame :public IFrame
 {
 public:
 	CGLFrame(void);

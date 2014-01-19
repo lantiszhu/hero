@@ -1,7 +1,7 @@
 #ifndef HERO_ENGINE_H
 #define HERO_ENGINE_H
 
-#include "HeroEngineDef.h"
+#include "HeroDef.h"
 
 #include "targetver.h"
 

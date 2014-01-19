@@ -6,7 +6,7 @@ namespace hero
 
 class CFreeEngine;
 
-class CRY_ENGINE_API IFrame
+class HERO_ENGINE_API IFrame
 {
 public:
 	IFrame(void);

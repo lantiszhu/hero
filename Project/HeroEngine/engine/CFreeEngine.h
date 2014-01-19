@@ -8,7 +8,7 @@ namespace hero
 class CSceneMgr;
 class CRenderMgr;
 
-class CRY_ENGINE_API CFreeEngine
+class HERO_ENGINE_API CFreeEngine
 {
 public:
 	CFreeEngine(void);

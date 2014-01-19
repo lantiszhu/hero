@@ -5,7 +5,7 @@ namespace hero
 {
 
 class IFrame;
-class CRY_ENGINE_API IPlat
+class HERO_ENGINE_API IPlat
 {
 public:
 	IPlat(void);

@@ -1,6 +1,8 @@
 // dllmain.cpp : 定义 DLL 应用程序的入口点。
 #include "HeroLogic.h"
 
+//这一层与项目相关 统一实现类 命名采用"L"开头  代表与项目相关
+
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
                        LPVOID lpReserved

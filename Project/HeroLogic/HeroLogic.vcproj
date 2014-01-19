@@ -60,7 +60,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				OutputFile="$(OutDir)\$(ProjectName)d.dll"
+				OutputFile="$(OutDir)\$(ProjectName).dll"
 				LinkIncremental="2"
 				ModuleDefinitionFile="HeroLogic.def"
 				GenerateDebugInformation="true"
@@ -171,6 +171,38 @@
 		<Filter
 			Name="object"
 			>
+			<File
+				RelativePath=".\LEntityBase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\LEntityBase.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="logic"
+			>
+			<File
+				RelativePath=".\LLogicMgr.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\LLogicMgr.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="io"
+			>
+			<File
+				RelativePath=".\IO\LIOMgr.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\LIOMgr.h"
+				>
+			</File>
 		</Filter>
 		<File
 			RelativePath=".\dllmain.cpp"
