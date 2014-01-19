@@ -179,6 +179,14 @@
 				RelativePath=".\LEntityBase.h"
 				>
 			</File>
+			<File
+				RelativePath=".\LMap.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\LMap.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="logic"
