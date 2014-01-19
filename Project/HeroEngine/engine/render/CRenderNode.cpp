@@ -4,7 +4,7 @@ using namespace hero;
 
 CRenderNode::CRenderNode(void)
 {
-	m_Type = 0;
+	m_Type = RN_BASE;
 }
 
 

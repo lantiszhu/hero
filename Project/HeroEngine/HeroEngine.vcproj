@@ -63,6 +63,7 @@
 				Name="VCLinkerTool"
 				IgnoreImportLibrary="false"
 				AdditionalDependencies="opengl32.lib glu32.lib"
+				OutputFile="$(OutDir)\$(ProjectName)d.dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\lib"
 				ModuleDefinitionFile="HeroEngine.def"
@@ -192,14 +193,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\engine\CGLFrame.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CGLFrame.h"
-				>
-			</File>
-			<File
 				RelativePath=".\engine\CNodeSpace.cpp"
 				>
 			</File>
@@ -213,30 +206,6 @@
 			</File>
 			<File
 				RelativePath=".\engine\CRenderSample.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CWin32Plat.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\CWin32Plat.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\IFrame.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\IFrame.h"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\IPlat.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\engine\IPlat.h"
 				>
 			</File>
 			<Filter
@@ -371,19 +340,87 @@
 					>
 				</File>
 				<File
-					RelativePath=".\engine\render\CRenderNode.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\engine\render\CRenderNode.h"
-					>
-				</File>
-				<File
 					RelativePath=".\engine\render\CRenderScene.cpp"
 					>
 				</File>
 				<File
 					RelativePath=".\engine\render\CRenderScene.h"
+					>
+				</File>
+				<Filter
+					Name="Batch"
+					>
+					<File
+						RelativePath=".\engine\render\CMapBatch.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\engine\render\CMapBatch.h"
+						>
+					</File>
+					<File
+						RelativePath=".\engine\render\CRenderBatch.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\engine\render\CRenderBatch.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Node"
+					>
+					<File
+						RelativePath=".\engine\render\CMapNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\engine\render\CMapNode.h"
+						>
+					</File>
+					<File
+						RelativePath=".\engine\render\CRenderNode.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\engine\render\CRenderNode.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="frame"
+				>
+				<File
+					RelativePath=".\engine\CGLFrame.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\CGLFrame.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\CWin32Plat.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\CWin32Plat.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\IFrame.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\IFrame.h"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\IPlat.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\engine\IPlat.h"
 					>
 				</File>
 			</Filter>
